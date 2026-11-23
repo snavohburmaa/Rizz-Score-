@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rizz Score</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="head">
+      <h1>Rizz Score</h1>
+      <p class="sub">Ten questions. One number. No mercy.</p>
+    </header>
+
+    <section id="quiz" class="card">
+      <form id="form"></form>
+      <button id="submit" class="go" type="button">Judge me</button>
+      <p class="fine">This is a joke app. Do not change your life based on the result.</p>
+    </section>
+
+    <section id="scan" class="card hidden">
+      <p class="scantitle">Face scan</p>
+      <div class="viewport">
+        <video id="video" autoplay playsinline muted></video>
+        <div class="vignette"></div>
+        <div class="grid"></div>
+        <div class="sweep"></div>
+        <div class="brack tl"></div>
+        <div class="brack tr"></div>
+        <div class="brack bl"></div>
+        <div class="brack br"></div>
+        <div class="reticle"></div>
+        <p class="timer" id="timer">7</p>
+      </div>
+      <p class="prompt" id="prompt">Starting camera...</p>
+      <div class="meter"><div class="meterfill" id="meterfill"></div></div>
+      <button id="skip" class="go ghost" type="button">Skip the scan</button>
+      <p class="fine">The camera feed stays in your browser. Nothing is uploaded, recorded or saved.</p>
+    </section>
+
+    <section id="loading" class="card hidden">
+      <div class="spinner"></div>
+      <p class="loadtext">Reading your aura...</p>
+    </section>
+
+    <section id="result" class="card hidden">
+      <p class="rank" id="rank"></p>
+      <div class="scorebox">
+        <span class="score" id="score">0</span>
+        <span class="outof">/ 100</span>
+      </div>
+      <div class="bar"><div class="fill" id="fill"></div></div>
+      <p class="roast" id="roast"></p>
+      <ul class="tips" id="tips"></ul>
+      <button id="again" class="go ghost" type="button">Try again</button>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
