@@ -3,9 +3,6 @@
 A joke web app. You answer ten silly questions about yourself and an LLM rates
 your "rizz" out of 100, gives you a rank, a short roast and three tips.
 
-Built for a university proposal by Khant Wai Yan Aung (6703712) and
-Kaung San Thu (6703124).
-
 ## How it works
 
 1. The browser loads the question list from the server.
